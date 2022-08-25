@@ -204,6 +204,7 @@
                         <outlet property="tenPctButton" destination="7y6-Kf-yF0" id="3H0-iq-InT"/>
                         <outlet property="twentyPctButton" destination="UtR-dU-EKt" id="ydC-Mn-7ss"/>
                         <outlet property="zeroPctButton" destination="XzR-0E-Xf7" id="0dz-kJ-fT2"/>
+                        <segue destination="Dnf-m2-FPm" kind="show" identifier="goToResults" id="LVD-eb-8mD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -215,7 +216,7 @@
             <objects>
                 <viewController id="Dnf-m2-FPm" customClass="ResultViewController" customModule="Tipsy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DNW-gk-FsX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCe-Te-efL">
@@ -252,7 +253,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzn-9K-6hu">
-                                <rect key="frame" x="107" y="808" width="200" height="54"/>
+                                <rect key="frame" x="107" y="788" width="200" height="54"/>
                                 <color key="backgroundColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="0Lh-eY-3GO"/>
@@ -292,6 +293,7 @@
                             <constraint firstItem="ZCe-Te-efL" firstAttribute="top" secondItem="DNW-gk-FsX" secondAttribute="top" id="zdY-59-9ry"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="F8K-fd-uNg"/>
                     <connections>
                         <outlet property="settingsLabel" destination="HGt-bn-sCv" id="NvH-BB-mrF"/>
                         <outlet property="totalLabel" destination="uLJ-ii-hft" id="szK-Ow-dUb"/>
@@ -299,7 +301,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLi-Eb-NGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742" y="118"/>
+            <point key="canvasLocation" x="935" y="118"/>
         </scene>
     </scenes>
 </document>
